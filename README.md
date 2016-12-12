@@ -6,8 +6,6 @@
 requests on the command line.
 
 
-
-
 ## Why?
 
 Sometimes it is useful to be able to create an actual raw 
@@ -26,7 +24,7 @@ or [`wget`](https://www.gnu.org/software/wget/)
 an abstraction layer and one doesn't have a complete control over the 
 exact raw data that gets written to the HTTP socket connection.
 
-Low-lever clients, such as the popular 
+Lower-level tools, such as the popular 
 [`netcat`](https://en.wikipedia.org/wiki/Netcat), are better suited for this 
 job.
 
