@@ -31,7 +31,7 @@ Low-lever clients, such as the popular
 job.
 
 However, the syntax of HTTP requires headers to be separated with 
-`\r\n` which make is it difficult to produce them on the command line. 
+`\r\n` which makes it difficult to produce them on the command line. 
 A typical solution involves the use of `echo`:
 
 
@@ -40,7 +40,7 @@ $ echo -ne 'GET / HTTP/1.1\r\nContent-Length: 5\r\n\r\nhello' | \
     nc localhost 8000
 ```
 
-`httpcat` make this easier.
+`httpcat` makes this easier.
 
 
 ## How it works
