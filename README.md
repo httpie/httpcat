@@ -7,7 +7,7 @@ requests on the command line.
 
 ## Why?
 
-Sometimes it is useful to be create an actual raw 
+Sometimes it is useful to be able to create an actual raw 
 [HTTP request](https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html)
 on the  command line:
  
@@ -20,16 +20,16 @@ In such cases, existing CLI HTTP clients—such as
 [`curl`](https://curl.haxx.se/), 
 or [`wget`](https://www.gnu.org/software/wget/) 
 —are too high-level as they provide
-an abstraction layer and one has no complete control over what 
-data that gets written to the socket.
+an abstraction layer and one has no complete control over the 
+exact raw data gets written to the socket.
 
 Low-lever clients, such as the popular 
 [`netcat`](https://en.wikipedia.org/wiki/Netcat), are better suited for this 
 job.
 
 However, the syntax of HTTP requires headers to be separated with 
-`\r\n`, which make is it difficult to produce on the command line. 
-A typical solution involves the use of `echo`, which is inconvenient:
+`\r\n` which make is it difficult to produce them on the command line. 
+A typical solution involves the use of `echo`:
 
 
 ```bash
