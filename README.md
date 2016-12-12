@@ -132,8 +132,8 @@ $ httpcat '/' 'Host: example.org' ''  | nc example.org 80
 pip install httpcat
 ```
 
-Alternatively just download `httpcat.py` manually invoke it as `./httpcat.py`
-instead of `httpcat`. 
+Alternatively, you can just download `httpcat.py` manually and invoke 
+it as `./httpcat.py` instead of `httpcat`. 
 
 
 ### Tests
