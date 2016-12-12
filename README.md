@@ -129,7 +129,7 @@ $ httpcat '/' 'Host: example.org' ''  | nc example.org 80
 
 
 ```bash
-pip install httpcat
+pip3 install httpcat
 ```
 
 Alternatively, you can just download `httpcat.py` manually and invoke 
@@ -139,5 +139,5 @@ it as `./httpcat.py` instead of `httpcat`.
 ### Tests
 
 ```bash
-python setup.py test
+python3 setup.py test
 ```
