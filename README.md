@@ -1,8 +1,11 @@
 # `httpcat`
 
+[![Build Status](https://travis-ci.org/jkbrzt/httpcat.svg?branch=master)](https://travis-ci.org/jkbrzt/httpcat)
 
 ``httpcat`` is a simple utility for constructing raw HTTP
 requests on the command line.
+
+
 
 
 ## Why?
