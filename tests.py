@@ -1,4 +1,4 @@
-from httpcat import main, EOF, CRLF
+from httpcat import httpcat, EOF, CRLF
 
 
 class MockIO:
@@ -18,7 +18,7 @@ class MockIO:
 
 def process(input_lines):
     io = MockIO(input_lines=input_lines)
-    main(initial_lines=[], infile=io, outfile=io)
+    httpcat(initial_lines=[], infile=io, outfile=io)
     return io.output_lines
 
 
