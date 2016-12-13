@@ -77,7 +77,7 @@ line which will be converted to `\r\n\` separating the headers and the body.
 Note also that the omitted `HTTP-Version` is auto-completed:
 
 ```bash
-httpcat -v 'POST /post' 'Host: httpbin.org' 'Content-Length: 5' '' 'Hello'  | nc httpbin.org 80
+$ httpcat -v 'POST /post' 'Host: httpbin.org' 'Content-Length: 5' '' 'Hello'  | nc httpbin.org 80
 > POST /post HTTP/1.1\r\n
 > Host: httpbin.org\r\n
 > Content-Length: 5\r\n
@@ -86,21 +86,19 @@ httpcat -v 'POST /post' 'Host: httpbin.org' 'Content-Length: 5' '' 'Hello'  | nc
 
 ```
 
-Specify headers and body on the command line. 
-Note that the omitted `Method` is set to `GET` and `HTTP-Version` 
-is auto-completed:
+Note that the omitted `Method` is set to `GET` and `HTTP-Version` is auto-completed:
 
 ```bash
-$ httpcat -vn '/' 'Host: example.org' ''  | nc example.org 80
--> GET / HTTP/1.1\r\n
--> Host: example.org\r\n
--> \r\n [headers written]
+$ httpcat -v / 'Host: example.org' '' | nc example.org 80
+> GET / HTTP/1.1\r\n
+> Host: example.org\r\n
+> \r\n
 ```
 
 You can, for example, use `stdin` for data and arguments for headers: 
 
 ```bash
-cat file.txt | httpcat -v 'POST /post' 'Host: httpbin.org' 'Content-Length: 16' '' | nc httpbin.org 80
+$ cat file.txt | httpcat -v 'POST /post' 'Host: httpbin.org' 'Content-Length: 16' '' | nc httpbin.org 80
 > POST /post HTTP/1.1\r\n
 > Host: httpbin.org\r\n
 > Content-Length: 16\r\n
