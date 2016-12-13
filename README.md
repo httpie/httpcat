@@ -73,8 +73,8 @@ Content-Length: 6
 ```
 
 Specify the whole request in the arguments. Here `''` represents an empty
-line which will be converted to `\r\n\` separating the headers and the body.  
-Note also that the omitted `HTTP-Version` is auto-completed:
+line which will be converted to `\r\n\` separating the headers and the 
+body. Note also that the omitted `HTTP-Version` is auto-completed:
 
 ```bash
 $ httpcat -v 'POST /post' 'Host: httpbin.org' 'Content-Length: 5' '' 'Hello'  | nc httpbin.org 80
@@ -86,7 +86,7 @@ $ httpcat -v 'POST /post' 'Host: httpbin.org' 'Content-Length: 5' '' 'Hello'  | 
 
 ```
 
-Note that the omitted `Method` is set to `GET` and `HTTP-Version` is auto-completed:
+Omitted `Method` is set to `GET` and `HTTP-Version` is auto-completed:
 
 ```bash
 $ httpcat -v / 'Host: example.org' '' | nc example.org 80
