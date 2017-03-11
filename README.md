@@ -1,6 +1,6 @@
 # `httpcat`
 
-[![Build Status](https://travis-ci.org/jkbrzt/httpcat.svg?branch=master)](https://travis-ci.org/jkbrzt/httpcat)
+[![Build Status](https://travis-ci.org/jakubroztocil/httpcat.svg?branch=master)](https://travis-ci.org/jakubroztocil/httpcat)
 
 ``httpcat`` is a simple utility for constructing raw HTTP
 requests on the command line.
@@ -158,3 +158,11 @@ python3 setup.py test
 
 * `0.0.1` (2016-12-12)
    * Initial release.
+
+## Contact
+
+Jakub Roztocil
+
+* [https://github.com/jakubroztocil](https://github.com/jakubroztocil)
+* [https://twitter.com/jakubroztocil](https://twitter.com/jakubroztocil)
+* [http://roztocil.co](http://roztocil.co)

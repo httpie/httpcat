@@ -74,7 +74,7 @@ def httpcat(initial_lines=sys.argv[1:],
 
 parser = argparse.ArgumentParser(
     description=__doc__.strip(),
-    epilog='project homepage: https://github.com/jkbrzt/httpcat',
+    epilog='project homepage: https://github.com/jakubroztocil/httpcat',
 
 )
 parser.add_argument(
