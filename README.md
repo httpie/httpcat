@@ -1,6 +1,6 @@
 # `httpcat`
 
-[![Build Status](https://travis-ci.org/jakubroztocil/httpcat.svg?branch=master)](https://travis-ci.org/jakubroztocil/httpcat)
+[![Build Status](https://github.com/jakubroztocil/httpcat/blob/master/.github/workflows/test.yml)](https://github.com/jakubroztocil/httpcat/actions)
 
 ``httpcat`` is a simple utility for constructing raw HTTP
 requests on the command line.
