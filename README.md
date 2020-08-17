@@ -34,7 +34,7 @@ A typical solution involves the use of `echo`:
 
 
 ```bash
-$ echo -ne 'GET / HTTP/1.1\r\nHost: httpbin.org\r\nContent-Length: 5\r\n\r\nHello' | \
+$ echo -ne 'POST /post HTTP/1.1\r\nHost: httpbin.org\r\nContent-Length: 5\r\n\r\nHello' | \
     nc localhost 8000
 ```
 
@@ -145,6 +145,37 @@ it as `./httpcat.py` instead of `httpcat`.
 
 ```bash
 python3 setup.py test
+```
+
+
+## HTTPie offline mode
+
+[HTTPie](https://httpie.org) starting with version 2.0.0 also provides an [`--offline` mode](https://httpie.org/docs#offline-mode), which provides a convenient mechanism for crafting arbitrary HTTP requests without sending them using the user-friendly HTTPie syntax, for example:
+
+```bash
+echo -n 'Hello' | http --offline POST httpbin.org/post
+```
+
+The above command generates the following output:
+
+```http
+POST /post HTTP/1.1
+Accept: application/json, */*;q=0.5
+Accept-Encoding: gzip, deflate
+Authorization: Basic aHR0cGllOnRlc3Q=
+Connection: keep-alive
+Content-Length: 5
+Content-Type: application/json
+Host: httpbin.org
+User-Agent: HTTPie/2.2.0
+
+Hello
+```
+
+The output is valid HTTP, so it can simply be sent using `nc`:
+
+```bash
+$ echo -n 'Hello' | http --offline POST httpbin.org/post | nc httpbin.org 80
 ```
 
 ## Changelog
