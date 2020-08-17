@@ -162,7 +162,6 @@ The above command generates the following output:
 POST /post HTTP/1.1
 Accept: application/json, */*;q=0.5
 Accept-Encoding: gzip, deflate
-Authorization: Basic aHR0cGllOnRlc3Q=
 Connection: keep-alive
 Content-Length: 5
 Content-Type: application/json
