@@ -150,7 +150,7 @@ python3 setup.py test
 
 ## HTTPie offline mode
 
-[HTTPie for Terminal](https://httpie.io/) starting with version 2.0.0 also provides an [`--offline` mode](https://httpie.org/docs/cli/offline-mode). This makes it a good alternative to `httpcat` because it provides a convenient mechanism for crafting arbitrary HTTP requests without sending them using the user-friendly HTTPie syntax, for example:
+[HTTPie CLI](https://httpie.io/) starting with version 2.0.0 also provides an [`--offline` mode](https://httpie.io/docs/cli/offline-mode). This makes it a good alternative to `httpcat` because it provides a convenient mechanism for crafting arbitrary HTTP requests without sending them using the user-friendly HTTPie syntax, for example:
 
 ```bash
 echo -n 'Hello' | http --offline POST httpbin.org/post
@@ -193,6 +193,6 @@ $ echo -n 'Hello' | http --offline POST httpbin.org/post | nc httpbin.org 80
 
 Jakub Roztocil
 
-* [https://github.com/jakubroztocil](https://github.com/jakubroztocil)
-* [https://twitter.com/jakubroztocil](https://twitter.com/jakubroztocil)
+* [https://github.com/jkbrzt](https://github.com/jkbrzt)
+* [https://twitter.com/jkbrzt](https://twitter.com/jkbrzt)
 * [http://roztocil.co](http://roztocil.co)
