@@ -27,8 +27,8 @@ setup(
     author=__author__,
     author_email='jakub@roztocil.co',
     license=__licence__,
-    url='https://github.com/jakubroztocil/httpcat',
-    download_url='https://github.com/jakubroztocil/httpcat',
+    url='https://github.com/httpie/httpcat',
+    download_url='https://github.com/httpie/httpcat',
     py_modules=[
         'httpcat',
     ],
