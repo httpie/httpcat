@@ -25,10 +25,10 @@ setup(
     long_description=open('README.md').read().strip(),
     version=__version__,
     author=__author__,
-    author_email='jakub@roztocil.co',
+    author_email='jakub@httpie.io',
     license=__licence__,
-    url='https://github.com/jakubroztocil/httpcat',
-    download_url='https://github.com/jakubroztocil/httpcat',
+    url='https://github.com/httpie/httpcat',
+    download_url='https://github.com/httpie/httpcat',
     py_modules=[
         'httpcat',
     ],
